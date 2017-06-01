@@ -49,7 +49,6 @@ class Network(object):
         nabla_w = [np.zeros(w.shape) for w in self.weights]
         # feedforwad
         activation = x
-        print(x)
         activations = [x]
         zs = []
         for b, w in zip(self.biases, self.weights):
