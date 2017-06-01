@@ -32,8 +32,8 @@ class Network(object):
                 print("Epoch {0} complete".format(j))
 
     def update_mini_batch(self, mini_batch, eta):
-        #print(self.biases)
-        #print(self.weights)
+        # print(self.biases)
+        # print(self.weights)
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
         for x, y in zip(mini_batch[0], mini_batch[1]):
